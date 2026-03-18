@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Componentes da pasta components
 import NavBar from './renders/components/NavBar';
-//import FloatingWhatsApp from './renders/components/FloatingWhatsApp';
+import FloatingWhatsApp from './renders/components/FloatingWhatsApp';
 import RouteTracker from './renders/components/RouteTraker';
 
 // Componentes da pasta Sections (Importados exatamente de onde estão no seu VS Code)
@@ -11,9 +11,9 @@ import Footer from './renders/Sections/Footer';
 import Testimonials from './renders/Sections/Testimonials';
 import Hero from './renders/Sections/Hero';
 import About from './renders/Sections/About';
+import Contact from './renders/Sections/Contact';
 /*import Hypnotherapy from './renders/Sections/Hypnotherapy';
 import MentesFortes from './renders/Sections/MentesFortes';
-import Contact from './renders/Sections/Contact';
 
 // Novas Páginas (Acesso Restrito)
 import Login from './renders/pages/Login';
@@ -37,11 +37,11 @@ const App: React.FC = () => {
                 <Route path="/sobre" element={<div className="page-fade-in"> <About /> </div>} />
                 {/* <Route path="/hipnoterapia" element={<div className="page-fade-in"> <Hypnotherapy /> </div>} /> */}
                 {/* <Route path="/projeto" element={<div className="page-fade-in"> <MentesFortes /> </div>} /> */}
-                {/* <Route path="/contato" element={<div className="page-fade-in"> <Contact /> </div>} /> */}
+                <Route path="/contato" element={<div className="page-fade-in"> <Contact /> </div>} />
               </Routes>
             </main>
             <Footer />
-            {/* <FloatingWhatsApp /> */}
+            <FloatingWhatsApp />
           </>
         } />
 
