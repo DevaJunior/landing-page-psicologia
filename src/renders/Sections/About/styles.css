@@ -1,0 +1,328 @@
+.page-top-padding {
+  padding-top: 150px;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+}
+
+.about-editorial {
+  margin-top: 100px;
+  background-color: var(--bg-main);
+}
+
+.about-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.massive-title {
+  font-size: 3.5rem;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.intro-text-block p {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.intro-text-block p:last-child {
+  margin-bottom: 0;
+}
+
+.editorial-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 4rem 0;
+}
+
+.psy-block {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.block-header {
+  position: relative;
+  position: sticky;
+  top: 150px;
+  align-self: start;
+}
+
+.block-number {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.block-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+.block-desc {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.elegant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.elegant-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-weight: 300;
+  color: var(--text-main);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.list-marker {
+  width: 20px;
+  height: 1px;
+  background-color: var(--accent);
+  margin-top: 14px;
+  flex-shrink: 0;
+}
+
+.small-heading {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.disorders-accordion-section {
+  background-color: var(--bg-alt);
+  padding: 2.5rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--accent);
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-color);
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover .accordion-title,
+.accordion-header:hover .accordion-icon {
+  color: var(--accent);
+}
+
+.accordion-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.accordion-icon {
+  color: var(--secondary);
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-content-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.is-open .accordion-content-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.accordion-content-inner {
+  overflow: hidden;
+}
+
+.accordion-list {
+  padding: 0 0 1.5rem 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+.accordion-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.accordion-list li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.accordion-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 2400px) {
+  .page-top-padding {
+    padding-top: 250px;
+  }
+
+  .massive-title {
+    font-size: 5rem;
+  }
+
+  .psy-block {
+    grid-template-columns: 450px 1fr;
+    gap: 6rem;
+  }
+
+  .intro-text-block p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .psy-block {
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+  }
+
+  .massive-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-header-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .psy-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .block-header {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-top-padding {
+    padding-top: 120px;
+  }
+
+  .massive-title {
+    font-size: 2.8rem;
+  }
+
+  .accordion-title {
+    font-size: 1.2rem;
+  }
+
+  .disorders-accordion-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .block-header h2 {
+    font-size: 2rem;
+  }
+
+  .block-desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .massive-title {
+    font-size: 2.2rem;
+  }
+
+  .intro-text-block p {
+    font-size: 1rem;
+  }
+
+  .elegant-list li {
+    font-size: 0.95rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .list-marker {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .massive-title {
+    font-size: 1.8rem;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion-header {
+    padding: 1rem 0;
+  }
+}

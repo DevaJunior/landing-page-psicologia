@@ -8,12 +8,12 @@ import RouteTracker from './renders/components/RouteTraker';
 
 // Componentes da pasta Sections (Importados exatamente de onde estão no seu VS Code)
 import Footer from './renders/Sections/Footer';
-/*import Hero from './renders/Sections/Hero';
+import Testimonials from './renders/Sections/Testimonials';
+import Hero from './renders/Sections/Hero';
 import About from './renders/Sections/About';
-import Hypnotherapy from './renders/Sections/Hypnotherapy';
+/*import Hypnotherapy from './renders/Sections/Hypnotherapy';
 import MentesFortes from './renders/Sections/MentesFortes';
 import Contact from './renders/Sections/Contact';
-import Testimonials from './renders/Sections/Testimonials';
 
 // Novas Páginas (Acesso Restrito)
 import Login from './renders/pages/Login';
@@ -33,11 +33,11 @@ const App: React.FC = () => {
             <NavBar />
             <main className="page-content-wrapper">
               <Routes>
-                {/* <Route path="/" element={<div className="page-fade-in"> <Hero /> <Testimonials /> </div>} /> */}
-                {/* <Route path="/sobre" element={<div className="page-fade-in"> <About /> </div>} />
-                <Route path="/hipnoterapia" element={<div className="page-fade-in"> <Hypnotherapy /> </div>} />
-                <Route path="/projeto" element={<div className="page-fade-in"> <MentesFortes /> </div>} />
-                <Route path="/contato" element={<div className="page-fade-in"> <Contact /> </div>} /> */}
+                <Route path="/" element={<div className="page-fade-in"> <Hero /> <Testimonials /> </div>} />
+                <Route path="/sobre" element={<div className="page-fade-in"> <About /> </div>} />
+                {/* <Route path="/hipnoterapia" element={<div className="page-fade-in"> <Hypnotherapy /> </div>} /> */}
+                {/* <Route path="/projeto" element={<div className="page-fade-in"> <MentesFortes /> </div>} /> */}
+                {/* <Route path="/contato" element={<div className="page-fade-in"> <Contact /> </div>} /> */}
               </Routes>
             </main>
             <Footer />
