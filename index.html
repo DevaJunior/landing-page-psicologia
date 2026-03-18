@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1A2E24" />
+    <meta name="description" content="Dra. Paula Teixeira Pacheco - Psiquiatria com Ciência e Alma. Tratamento psiquiátrico para adultos, crianças e adolescentes, além de Hipnoterapia Clínica e o Projeto Mentes Fortes." />
+    
+    <title>Psiquiatria | Dra. Paula Teixeira Pacheco</title>
+    <link rel="icon" type="image/x-icon" href="/src/assets/logo_psi.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // O send_page_view: false evita que o Google dispare um evento duplicado no primeiro carregamento,
+      // pois o nosso componente React assumirá o controle total do rastreamento.
+      gtag('config', 'G-XXXXXXXXXX', { send_page_view: false });
+    </script>
+  </head>
+  <body>
+    <noscript>Você precisa habilitar o JavaScript para rodar esta aplicação.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

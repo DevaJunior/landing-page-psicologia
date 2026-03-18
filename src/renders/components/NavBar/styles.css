@@ -1,0 +1,120 @@
+.editorial-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 2rem 0;
+  background-color: var(--bg-main);
+  transition: all 0.4s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.editorial-nav.nav-scrolled {
+  padding: 1.2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand a {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active-link,
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.mobile-trigger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.nav-logo {
+  max-height: 75px; 
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-brand a:hover .nav-logo {
+  transform: scale(1.02);
+}
+
+.mobile-dropdown {
+  display: none;
+}
+
+@media (min-width: 2400px) {
+  .editorial-nav { padding: 3rem 0; }
+  .nav-logo { max-height: 100px; }
+  .nav-links { gap: 5rem; }
+  .nav-links a { font-size: 1.1rem; }
+}
+@media (max-width: 1200px) {
+  .nav-links { gap: 2rem; }
+}
+@media (max-width: 992px) {
+  .desktop-menu { display: none; }
+  .mobile-trigger { display: block; }
+  .mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-main);
+    padding: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .active-link-mobile {
+    color: var(--accent) !important;
+    font-weight: 600 !important;
+  }
+  .nav-logo { max-height: 55px; }
+}
+@media (max-width: 750px) {
+  .nav-logo { max-height: 50px; }
+  .editorial-nav { padding: 1.5rem 0; }
+}
+@media (max-width: 650px) {
+  .nav-logo { max-height: 45px; }
+  .mobile-dropdown { padding: 1.5rem; gap: 1.2rem; }
+}
+@media (max-width: 480px) {
+  .nav-logo { max-height: 40px; }
+  .editorial-nav { padding: 1rem 0; }
+}
+@media (max-width: 320px) {
+  .nav-logo { max-height: 35px; }
+  .mobile-dropdown a { font-size: 0.9rem; }
+}
