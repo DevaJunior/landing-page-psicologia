@@ -16,8 +16,8 @@ import Hypnotherapy from './renders/Sections/Hypnotherapy';
 import MentesFortes from './renders/Sections/MentesFortes';
 
 // Novas Páginas (Acesso Restrito)
-/*import Login from './renders/pages/Login';
-import Admin from './renders/pages/Admin';*/
+import Login from './renders/pages/Login';
+import Admin from './renders/pages/Admin';
 
 import './App.css';
 
@@ -46,8 +46,8 @@ const App: React.FC = () => {
         } />
 
         {/* ROTAS ADMINISTRATIVAS (Sem NavBar e sem Footer) */}
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<Admin />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </>
   );
